@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destown</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+  
+
+    <header class="header">
+      <div class="logo">
+        <img src="carrusel/logo.png" alt="Logo del la página">
+        <a class="titulo-logo" href="#">Destown</a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#">Galeria</a></li>                  
+        </ul>
+      </nav>
+      <a href="#contacto" class="btn"><button>Contacto</button></a>
+
+      <a onclick="openNav()" href="#" class="menu"><button>Menu</button></a>
+  
+      <div class="overlay" id="mobile-menu">
+        <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Menú</a>
+          <a href="#destinos">Destinos</a>
+          <a href="#">Galeria</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div> 
+
+    </header>
+    <section class="container">
+  <div class="body2">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <!-- <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="10"></li>
+      </ol> -->
+<!--TÍTULO SOBRE CARRUSEL-->
+      <div id="capa1" class="row">
+        
+        <div class="col">
+        <h1 class="titulo-BA">Conocé<br>
+          Buenos Aires
+        </h1>
+
+        </div>
+        
+      </div>
+      <div id="capa2">
+      <div class="carousel-inner carousel">
+        <div class="carousel-item active">
+          <img class="imgCarrusel" src="carrusel/portada-prueba.jpg" class="d-block w-100" height="
+          500">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="imgCarrusel" src="carrusel/img2-degrade.jpg" class="d-block w-100" height="500">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="imgCarrusel" src="carrusel/img3-degrade.jpg" class="d-block w-100" height="500">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <!--<div class="carousel-item">
+        <img class="imgCarrusel" src="carrusel/img4-degrade.jpg"d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="imgCarrusel" src="carrusel/img5-degrade.jpg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>-->
+        <div class="carousel-item">
+          <img class="imgCarrusel" src="carrusel/img6-degrade.jpg" class="d-block w-100" height="500">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+        <img class="imgCarrusel" src="carrusel/img7-degrade.jpg"d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="imgCarrusel" src="carrusel/img8-degrade.jpg" class="d-block w-100" height="500">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="imgCarrusel" src="carrusel/img9-degrade.jpg" class="d-block w-100" height="500">
+          <div class="carousel-caption d-none d-md-block">
+           
+          </div>
+        </div>
+        <div class="carousel-item">
+        <img class="imgCarrusel" src="carrusel/img10-degrade.jpg" class="d-block w-100" height="500">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+  </div><!--cierra-->
+  
+     <!--<section class="container">--> 
+        <div class="row">
+           <div class="col-12">
+             <h1 class="titulo1" id="destinos">Viajá por Buenos Aires</h1>            
+           </div>          
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="texto-body">Conocé en nuestra página todas las alternativas de turismo en Buenos Aires, incluyendo hoteles, restaurantes y excursiones</p>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+              <img class="imgPagPrincipal" src="carrusel/campanopolis1.png">
+            </div>
+            <div class="col-6 textoPagPrincipal">
+              <p><span>Campanópolis</span><br></p>
+              
+              <p>Es una aldea con espíritu medieval a solo 30 minutos del centro de Buenos Aires, fue construida por Antonio Campana en la década de los '80 y a lo largo de sus 200 hectáreas recrea distintos rincones de la antigua Europa, entre edificaciones de época , callejuelas adoquinadas y rios, bosques y lagunas.</p>
+              <a href="campanopolis.html"><button type="button" class="btn btn-sm">Ver más</button></a>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 textoPagPrincipal-i">
+            <p><span>Epecuén</span><br></p>
+            
+            <p>Villa Epecuén, ubicado en el partido de Adolfo Alsina, provincia de Buenos Aires, es un pueblo que no sólo superó una tragedia, sino que también supo reinventarse a través de sus ruinas para volver a atraer al turismo. Esta antigua villa del sudoeste de la provincia de Buenos Aires resurgió del agua, después de haber permanecido inundada por casi 20 años.</p>
+            <a href="epecuen.html"><button type="button" class="btn btn-sm">Ver más</button></a>
+          </div>
+          <div class="col-4">
+            <img class="imgPagPrincipal-i" src="carrusel/epecuen1.png">          
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <img class="imgPagPrincipal" src="carrusel/berdier1.png">
+          </div>
+          <div class="col-6 textoPagPrincipal">
+            <p><span>Berdier</span><br></p>
+            
+            <p>Berdier es un maravilloso pueblo escondido de la provincia de Buenos Aires a dos horas de la Zona Oeste del Conurbano: se encuentra a poco mas de 10 kilómetros de Salto, ciudad a la que pertenece, en la Provincia de Buenos Aires. Fue fundado el 15 de febrero de 1910 en terrenos cedidos por Hortencia y Corina Berdier y en sus años de esplendor llegó a tener una población de 2000 habitantes. Actualmente, atrae al turismo por su especial tranquilidad y lugares asombrosos.</p>
+            <a href="berdier.html"><button type="button" class="btn btn-sm">Ver más</button></a>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 textoPagPrincipal-i">
+          <p><span>Villarino</span><br></p> 
+          
+          <p>A 36 km de Bahía Blanca por RN 22, Villarino es un pueblo chico, tranquilo, apacible y muy agradable. sin duda, con bellos paisajes y hermosas postales para descubrir y fotografiarse. Pero, sobre todo, ofrece a los viajeros un amplio abanico de actividades que atraen y entretienen a todos los públicos.</p>
+          <a href="villarino.html"><button type="button" class="btn  btn-sm">Ver más</button></a>
+        </div>
+        <div class="col-4"> <!--cambiar img pq no es del pueblo-->
+          <img class="imgPagPrincipal-i" src="carrusel/villarino1.png">          
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <img class="imgPagPrincipal" src="carrusel/tapalque1.png">
+        </div>
+        <div class="col-6 textoPagPrincipal">
+          <p><span>Tapalqué</span><br></p>
+          
+          <p>En el centro de la provincia de Buenos Aires se alza Tapalqué, donde la paz, el aire puro y la calidez de la gente se conjugan a la vera del arroyo homónimo, entre bañados, totoras y los verdes de la llanura. Buscado por aquellos que desean un descanso en contacto con lo natural todo lo que el partido tiene para ofrecer.</p>
+          <a href="tapalque.html"><button type="button" class="btn btn-sm">Ver más</button></a>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 textoPagPrincipal-i">
+        <p><span>San Antonio de Areco</span><br></p>
+        
+        <p>San Antonio de Areco se encuentra a 113 km de la provincia de Buenos Aire y es conocida como "cuna de la tradición", debido a que conserva todos los atributos de un tradicional pueblo de la llanura pampeana. La comunidad es muy celosa en el cuidado y difusión de sus “usos y costumbres” tradicionales/criollos. Esa cuestión que caracteriza al arequero más allá de su condición social, raza o religión.</p>
+        <a href="areco.html"><button type="button" class="btn btn-sm">Ver más</button></a>
+      </div>
+      <div class="col-4">
+        <img class="imgPagPrincipal-i" src="carrusel/areco1.png">          
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <img class="imgPagPrincipal" src="carrusel/chascomus1.png">
+      </div>
+      <div class="col-6 textoPagPrincipal">
+        <p><span>Chascomús</span><br></p>
+        
+        <p>Chascomús, Ubicada a 123 km al sur del centro de la ciudad de Buenos Aires, es una ciudad colmada de cultura y tradición fue creciendo a orillas de su laguna, la más grande del sistema de Encadenadas. Con variados atractivos tanto históricos como naturales, el movimiento turístico de este destino se encuentra íntimamente ligado a la actividad lacustre.</p>
+        <a href="chascomus.html"><button type="button" class="btn btn-sm">Ver más</button></a>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6 textoPagPrincipal-i">
+      <p><span>Balcarce</span><br></p>
+      
+      <p>Balcarce, se encuentra situada en el sudeste de la Provincia de Buenos Aires, a 360 kilómetros de la Ciudad. Este destino propone la conexión perfecta entre las elevaciones más antiguas del mundo, el paisaje de las llanuras pampeanas, serranías verdes y valles productivos combinados con la paradisíaca laguna. Respirar el aire de las sierras ante un tejido natural de colores y formas es ideal para relajarse por un fin de semana</p>
+      <a href="balcarce.html"><button type="button" class="btn btn-sm">Ver más</button></a>
+    </div>
+    <div class="col-4">
+      <img class="imgPagPrincipal-i" src="carrusel/balcarce1.png">          
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <img class="imgPagPrincipal" src="carrusel/puntaindio1.png">
+    </div>
+    <div class="col-6 textoPagPrincipal">
+      <p><span>Punta Indio</span><br></p>
+      
+      <p>A una hora y media de la Capital se puede llegar a Punta Indio, un destino de la provincia de Buenos Aires que reúne todos los requisitos para una escapada: turismo alternativo, excelente gastronomía y una política enfocada a la conservación ambiental.</p>
+      <a href="puntaindio.html"><button type="button" class="btn btn-sm">Ver más</button></a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6 textoPagPrincipal-i">
+      <p><span>San Pedro</span><br></p>
+      
+      <p>San pedro se encuentra a 164 km de Buenos Aires. Es elegida por gran cantidad de turistas para mini escapadas o viajes cortos debido a sus fiestas populares muy conocidas como el Festival de Música Country, en septiembre, que duplica su población durante ese fin de semana, y la Fiesta de la Ensaimada, en agosto, que tuvo 15.000 visitantes en la edición de 2016.</p>
+      <a href="sanpedro.html"><button type="button" class="btn btn-sm">Ver más</button></a>
+    </div>
+    <div class="col-4">
+      <img class="imgPagPrincipal-i" src="carrusel/sanpedro1.png">          
+    </div>
+  </div>
+
+  <hr>
+  <!--Contacto-->
+    <span class="form-title" id="contacto" >Contactanos</span>
+    <p class="texto-body">Ante cualquier duda, consulta, o crítica recontructiva que tengas para hacernos, contactanos y te responderemos a la brevedad al correo electrónico que indiques a continuación!</p>
+    <div class="row">
+      
+      <div class="col-6">
+        <form action="https://formspree.io/f/mwkjlpgg" method="POST">
+          
+          <div class="form">
+            
+            <div class="input-container ic1">
+              <input id="firstname" name="name" class="input" type="text" placeholder=" " />
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">Nombre y Apellido</label>
+            </div>
+            
+            <div class="input-container ic2">
+              <input id="email" name="email" class="input" type="text" placeholder=" " />
+              <div class="cut cut-short"></div>
+              <label for="email" class="placeholder">Email</>
+            </div>
+            <div class="input-container ic2">
+              <div class="form-floating">
+                <textarea class="form-control" name="texte"placeholder="Dejanos un comentario" id="floatingTextarea2" style="height: 100px"></textarea>
+              </div>
+            </div>
+            <button type="text" class="submit">Enviar</button>
+          </div>
+
+        </form>
+      </div>
+
+    <div class="col-6">
+       
+      <div class="form">
+        <div class="title">info</div>
+        <span>rocioantonellacappuccio@gmail.com</span>
+        <span>+54 3329 338809</span>
+        <span>9:00 - 18:00</span>
+        <span>Av. Sta. Fe 1801</span>
+
+      </div>
+    </div>
+
+  </div>
+
+
+    
+
+    
+
+      </section>
+    </div>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  
+</body>
+</section>
+</html> 

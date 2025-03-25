@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Megrim&family=Meow+Script&family=Nunito:wght@200;400;700&family=Poiret+One&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-image: url(carrusel/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  font-size: 16px;
+}
+
+/*TEXTOS GENERALES DE LA PAGINA*/
+.texto-body {
+  width: 100%;
+  text-align: center;
+  padding: 20px 50px 20px;
+}
+
+/*PÁGINA SOBRE EL FONDO DIFUMINADO*/
+.body2 {
+  margin-left: 8%;
+  margin-right: 8%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.747);
+  margin-top: 10%;
+  margin-bottom: 5%;
+  background-color: #020201;
+  color: rgb(214, 214, 214);
+  min-height: 900px;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.295) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 20px 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.7s;
+  z-index: 1;
+}
+
+header.abajo {
+  background-color: #020201 !important;
+  padding: 10px 25px;
+  height: 75px;
+}
+
+.header .logo {
+  cursor: pointer;
+}
+
+.header .logo img {
+  height: 65px;
+  width: auto;
+  transition: all 0.3s;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header .logo img:hover {
+  transform: scale(1.2);
+}
+
+.header .titulo-logo {
+  color: #f1e0ca;
+  font-size: 45px;
+  position: relative;
+  letter-spacing: 2px;
+  transition: 1.5s;
+  display: inline-block;
+  padding: 0 20px;
+  align-items: center;
+  margin-top: 14px;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.header .nav-links {
+  list-style: none;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.header .nav-links li:hover,
+.overlay a:hover,
+.header .titulo-logo:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links a {
+  font-size: 700;
+  color: #f1e0ca;
+}
+
+.header .nav-links li a:hover,
+.header .titulo-logo:hover {
+  color: #cba16e;
+}
+
+/*botón del header*/
+
+.menu {
+  display: none;
+}
+
+.header .btn button,
+.header .menu button {
+  font-weight: 700;
+  color: #f1e0ca;
+  padding: 9px 25px;
+  background-color: #cba16e;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0;
+}
+
+.header .btn button:hover,
+.header .menu button:hover {
+  background-color: #cba16e;
+  color: #fffaf5;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 800px) {
+  .nav-links,
+  .btn {
+    display: none;
+  }
+  .menu {
+    display: inherit;
+  }
+}
+
+/*Nav responsive*/
+.header a {
+  text-decoration: none;
+}
+
+.header .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #000000b6;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.header .overlay .overlay-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.header .overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s;
+  font-weight: 700;
+  color: #cba16e;
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus {
+  color: #f1e0ca;
+}
+
+.header .overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+@media screen and (max-height: 450px) {
+  .header .overlay a {
+    font-size: 20px;
+  }
+  .header .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*PORTADA CARRUSEL-----------------------------------------------*/
+
+.carousel {
+  background-color: transparent !important;
+  background-size: cover;
+  min-height: 100vh;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.imgCarrusel {
+  width: 932.5px;
+  height: 600px;
+}
+
+.slide img {
+  height: 600px;
+  min-width: 930px;
+}
+
+/*TEXTO PORTADA CARRUSEL-------------------------------------------*/
+#capa1 h1 {
+  position: absolute;
+  z-index: 1;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: column center;
+  margin-top: 20%;
+  font-family: "Poiret One", cursive;
+}
+
+#capa1 .titulo-BA {
+  font-family: "Nunito", sans-serif;
+  font-size: 100px;
+  display: flex;
+
+  text-align: center;
+  width: 100%;
+}
+
+#capa2 {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+
+/*título del cuerpo*/
+.col-12 .titulo1 {
+  text-align: center;
+  font-family: "Poiret One", cursive;
+}
+
+/*IMÁGENES DE LA PÁGINA PRINCIPAL*/
+.imgPagPrincipal {
+  width: 200px;
+  height: 200px;
+  margin-left: 30%;
+  margin-top: 40%;
+}
+/*imagenes invertidas*/
+.imgPagPrincipal-i {
+  width: 200px;
+  height: 200px;
+  margin-top: 40%;
+  margin-left: 9%;
+}
+
+/*TEXTOS DE LOS LUGARES PÁGINA PRINCIPAL*/
+.textoPagPrincipal {
+  text-align: justify;
+  margin-top: 10%;
+  margin-left: 8%;
+  font-size: 13px;
+}
+/*Texto invertido*/
+.textoPagPrincipal-i {
+  text-align: justify;
+  margin-left: 9%;
+  margin-top: 10%;
+  font-size: 13px;
+}
+
+span {
+  font-size: 30px;
+  color: #cba16e;
+}
+
+/*BOTONES CUERPO*/
+.btn.btn-sm {
+  --bs-btn-padding-y: 0.25rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 0.75rem;
+  background-color: #cba16e;
+  color: #020201;
+  border: none;
+}
+
+.btn.btn-sm:hover {
+  background-color: #b6874e;
+}
+
+.btn.btn-sm:active {
+  background-color: #b4803f;
+  color: white;
+}
+
+hr {
+  background-color: rgb(214, 214, 214);
+  margin: 50px 100px 50px;
+}
+
+/*CONTACTO*/
+
+.form-title {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 450px;
+  padding: 10px;
+  width: 350px;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 30px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 117px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #cba16e;
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 80px;
+  outline: 0;
+  text-align: center;
+  width: 70%;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+
+.form-control {
+  background-color: #303245;
+  align-items: center;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/*LINKS A OTRAS PAGINAS*/
+.links {
+  color: #b6874e;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: #cba16e;
+  text-decoration: none;
+}
+
+/*PAGINA CAMPANPOLIS*/
+.textos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 75px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.imagenes {
+  width: 781px;
+  height: 500px;
+}
+
+.introduccion {
+  margin: 100px 0px 50px;
+  margin-left: 10px;
+  text-align: left;
+  width: 300px;
+}
+
+.iframes {
+  margin-top: 100px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.galeriaDeFotos {
+  margin-left: 60px;
+}
+
+/*tamaño card epecuen*/
+
+.card {
+  width: 200px;
+  height: 230px;
+  margin-left: 24px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  background-color: #cba16e;
+  color: #eee;
+  font-size: 12px;
+}
+
+/*BERDIER*/
